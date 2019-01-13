@@ -1,0 +1,24 @@
+ {% extends "layout.html" %} 
+{% block content %}
+    <strong>{{ table_head }}</strong>
+    <div class="col-md-8 col-offset-2" style="margin: 5% auto;">
+
+    <table class="table table-striped">
+        <tr>
+            <th>AS</th>
+            <th>vpn_cod</th>
+            <th>vpn_IP</th>
+            <th>Last UPD</th>
+        </tr>
+    {% for i in content_arr %}
+        <tr class="text">
+            <td> {{ i.as_name }}</td>
+            <td> <a href="http://{{ i.vpn_ip }}">{{ i.vpn_name }}</a></td>
+            <td> <a href="http://{{ i.vpn_ip }}">{{ i.vpn_ip }}</a></td>
+            <td> {{ i.last_upd }}</td>
+
+        </tr>
+    {% endfor %}
+    </table>
+    </div>
+{% endblock %}
