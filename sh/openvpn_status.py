@@ -12,6 +12,7 @@ CLIENTDICT = {'650000':'myRPi',
             '488100':'"Орион"-S.O.E.',
             '460280':'Львов-2 (kiosk)',
             '460281':'Львов-2 (kiosk-2)',
+            '770400':'Черновцы-4',
             '488101':'"Орион"-Tablo'}
 PATH = '/var/run/openvpn.server.status'
 #import os
