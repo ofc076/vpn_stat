@@ -53,6 +53,10 @@ def hello_world():
         line_dict['vpn_name'] = parsed_line[1].strip()
         line_dict['vpn_ip'] = parsed_line[2].strip()
         line_dict['last_upd'] = parsed_line[3].strip()
+        if line_dict['vpn_name'][:2] in GET_SOUND:
+            line_dict['link'] = '/dload/list_to_rec.py'
+        else:
+            line_dict['link'] = ''
         content.append(line_dict)
 
     return render_template('base.html', content_arr=content, table_head=table_head), 200, add_headers_http(REFRESH_TIME, request, redirect='')
