@@ -27,9 +27,10 @@ a:visited {color:black;}
   <p class="mb-0">
       {% for message in messages %}
       <li>{{ message }}</li>
-    {% endfor %}</a>.</p>
+      {% endfor %}
 </div>
   {% endif %}
 {% endwith %}
 {% block content %}{% endblock %}
+<script src="/static/checklinks.js"></script>
 </body>

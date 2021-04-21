@@ -18,7 +18,7 @@
             <td> <a href="http://{{ i.vpn_ip }}">{{ i.vpn_ip }}</a></td>
             <td> {{ i.last_upd }}</td>
 	    {% if i.link %}
-	    <td> <a href="http://{{ i.vpn_ip }}/dload/list_to_rec.py">[*]</a></td>
+	    <td> <a href="http://{{ i.vpn_ip }}/dload/list_to_rec.py" class="dload-link">[*]</a></td>
 	    {% else %}
 	    <td></td>
 	    {% endif %}
